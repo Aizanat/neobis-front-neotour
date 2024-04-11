@@ -1,0 +1,11 @@
+.recommended__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.recommended__head {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64, 8px;
+}
