@@ -1,0 +1,92 @@
+.detailTour {
+  position: relative;
+}
+.tour__img {
+  width: 100%;
+  height: 657px;
+  object-fit: cover;
+}
+
+.tour__btn {
+  width: 169px;
+  height: 32px;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: transparent;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tour__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.tour__box {
+  padding: 56px 0 72px 120px;
+  border-radius: 48px 48px 0px 0px;
+}
+.tour__name {
+  color: #000;
+  font-size: 64px;
+}
+.tour__location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tour__location-name {
+  color: var(--Black, #141414);
+  font-size: 16px;
+}
+.tour__description {
+  margin-top: 49px;
+}
+.tour__description-head {
+  color: var(--Black, #141414);
+  font-size: 24px;
+}
+.tour__description__title {
+  color: var(--Black, #141414);
+  font-size: 18px;
+  margin-top: 16px;
+}
+.tour__reviews {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.tour__reviews-card {
+  margin: 24px 0;
+}
+.tour__reviews-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.tour__reviews-card-img {
+  width: 24px;
+  height: 24px;
+}
+.tour__reviews-card-head {
+  font-size: 18px;
+}
+
+.tour__button {
+  width: 1000px;
+  height: 64px;
+  border-radius: 100px;
+  background: var(--Primary, #6a62b7);
+  margin-top: 160px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
