@@ -1,7 +1,7 @@
 import React from 'react'
-import arrow from '../../images/arrow__right.svg'
-import frame from '../../images/frame.png'
-import './header.css'
+import arrow from '../../../images/arrow__let`sGo.svg'
+import frame from '../../../images/frame.png'
+import '../header/header.css'
 
 const Header = () => {
   return (
