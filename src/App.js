@@ -2,6 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Main from './pages/main/Main.jsx'
 import DetailTour from './pages/detTourPage/DetailTour.jsx'
+import ReservModal from './components/reservModal/ReservModal.jsx'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         {/* <Route path="/" element={<DetailTour />}></Route> */}
       </Routes>
       <DetailTour />
+      <ReservModal />
     </>
   )
 }
