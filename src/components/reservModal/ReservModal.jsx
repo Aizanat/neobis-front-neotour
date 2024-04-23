@@ -2,7 +2,7 @@ import React from 'react'
 import close from '../../images/close.svg'
 import people from '../../images/people.png'
 
-const ReservModal = () => {
+const ReservModal = ({ active, setActive, id }) => {
   return (
     <>
       <div className>

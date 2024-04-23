@@ -1,1 +1,45 @@
+.popularcards {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 87px;
+}
 
+.popularcards__card {
+  width: 384px;
+  height: 290px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.popularcards__card:hover {
+  transition: 0.3s;
+  transform: translateY(-10px);
+  box-shadow: 10px 12px 20px -14px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+.popularcards__card__img {
+  width: 100%;
+  min-height: 290px;
+  border-radius: 20px;
+}
+.popularcards__link {
+  text-decoration: none;
+  color: black;
+}
+.popularcards__div {
+  position: absolute;
+  bottom: 0;
+  width: 384px;
+  height: 70px;
+  background: #a0a0a0;
+  mix-blend-mode: multiply;
+  border-radius: 0 0 20px 20px;
+}
+.popularcards__des {
+  position: absolute;
+  top: 75%;
+  padding: 16px;
+  color: #fff;
+  font-size: 28px;
+}

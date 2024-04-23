@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DiscoverCard from '../../../components/discoverCard/DiscoverCard'
 import arrowLeft from '../../../images/arrow__left.png'
 import arrowRight from '../../../images/arrow__right.png'
@@ -20,13 +20,21 @@ const Discover = () => {
     },
     {
       viewTab: 'Europe',
-      postTab: 'europe',
+      postTab: 'continent/europe',
     },
     {
       viewTab: 'Asia',
-      postTab: 'asia',
+      postTab: 'continent/asia',
     },
   ]
+
+  const [category, setCategory] = useState('popular')
+  const [active, setActive] = useState('Popular')
+
+  const handleActiveClick = (tab) => {
+    setActive(tab.viewTab)
+    setCategory(tab.postTab)
+  }
 
   return (
     <div className="discover">
@@ -46,9 +54,22 @@ const Discover = () => {
             </button>
           </div>
         </div>
+
         <div className="discover__list">
-          <DiscoverCard />
+          {tabs.map((tab, idx) => (
+            <li
+              key={idx}
+              className={`discover__list__li ${
+                active === tab.viewTab ? 'active' : ''
+              }`}
+              onClick={() => handleActiveClick(tab)}
+              style={{ color: active === tab.viewTab ? '#6A62B7' : 'black' }}
+            >
+              {tab.viewTab}
+            </li>
+          ))}
         </div>
+        <DiscoverCard category={category} />
       </div>
     </div>
   )
