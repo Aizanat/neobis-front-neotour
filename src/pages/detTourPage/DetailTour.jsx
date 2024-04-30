@@ -11,7 +11,7 @@ const DetailTour = () => {
   const [data, setData] = useState([])
   const { id } = useParams()
   const navigate = useNavigate()
-  const [modalActive, SetModalActive] = useState(false)
+  const [modalActive, setModalActive] = useState(false)
 
   const handleClick = () => {
     navigate('/')
@@ -31,8 +31,8 @@ const DetailTour = () => {
 
   return (
     <div className="detailTour">
-      {data && data.images && (
-        <img src={data.image_url[0]} alt="" className="tour__img" />
+      {data && data.image_url && (
+        <img src={data.image_url[0]} alt="tour img" className="tour__img" />
       )}
 
       <button className="tour__btn" onClick={handleClick}>
@@ -48,7 +48,7 @@ const DetailTour = () => {
           </div>
           <div className="tour__description">
             <p className="tour__description__head">Description</p>
-            <p className="tour__description__title">{data.city}</p>
+            <p className="tour__description__title">{data.description}</p>
           </div>
           <div className="tour__reviews">
             <p className="tour__description__p">Reviews</p>
@@ -59,9 +59,12 @@ const DetailTour = () => {
                   alt="avatar"
                   className="tour__reviews-card-img"
                 />
-                <p className="tour__reviews-card-p">Anonymous</p>
+                <p className="tour__reviews-card-head">Anonymous</p>
               </div>
-              <p className="tour__reviews-card-text">{data.comment}</p>
+              <p className="tour__reviews-card-text">
+                That was such a nice place. The most beautiful place I’ve ever
+                seen. My advice to everyone not to forget to take warm coat
+              </p>
             </div>
             <div className="tour__reviews-card">
               <div className="tour__reviews-card-title">
@@ -70,16 +73,19 @@ const DetailTour = () => {
                   alt="avatar"
                   className="tour__reviews-card-img"
                 />
-                <p className="tour__reviews-card-p">Anonymous</p>
+                <p className="tour__reviews-card-head">Anonymous</p>
               </div>
-              <p className="tour__reviews-card-p">{data.comment}</p>
+              <p className="tour__reviews-card-p">
+                That was such a nice place. The most beautiful place I’ve ever
+                seen. My advice to everyone not to forget to take warm coat
+              </p>
             </div>
           </div>
-          <button className="tour__btns" onClick={() => SetModalActive(true)}>
+          <button className="tour__btns" onClick={() => setModalActive(true)}>
             Book now
           </button>
         </div>
-        <ReservModal active={modalActive} setActive={SetModalActive} id={id} />
+        <ReservModal active={modalActive} setActive={setModalActive} id={id} />
       </div>
     </div>
   )

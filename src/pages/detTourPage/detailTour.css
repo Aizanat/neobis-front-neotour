@@ -66,6 +66,10 @@
   display: flex;
   flex-direction: column;
 }
+.tour__description-p {
+  color: var(--Black, #141414);
+  font-size: 24px;
+}
 .tour__reviews-card {
   margin: 24px 0;
 }
@@ -83,7 +87,7 @@
   font-size: 18px;
 }
 
-.tour__button {
+.tour__btns {
   width: 1000px;
   height: 64px;
   border-radius: 100px;

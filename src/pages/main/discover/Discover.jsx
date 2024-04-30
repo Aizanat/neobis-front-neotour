@@ -20,11 +20,11 @@ const Discover = () => {
     },
     {
       viewTab: 'Europe',
-      postTab: 'continent/europe',
+      postTab: 'continent/Europe',
     },
     {
       viewTab: 'Asia',
-      postTab: 'continent/asia',
+      postTab: 'continent/Asia',
     },
   ]
 

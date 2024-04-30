@@ -4,6 +4,12 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
+.recocard__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
 .recocard__card {
   width: 282px;
   height: 282px;
